@@ -1,0 +1,16 @@
+syntax = "proto3";
+option go_package = "../go/pb"; // 注意这个路径
+package proto;
+
+service Service {
+  rpc Call (Request) returns (Response) {}
+}
+
+message Request {
+  map<string, string> header = 1;
+  bytes body = 2;
+}
+
+message Response {
+  bytes response = 1;
+}
