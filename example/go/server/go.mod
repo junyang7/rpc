@@ -1,17 +1,16 @@
 module server
 
-go 1.19
-
-require github.com/junyang7/go-common v1.0.0
+go 1.18
 
 require (
-	github.com/golang/protobuf v1.5.3 // indirect
-	golang.org/x/net v0.22.0 // indirect
-	golang.org/x/sys v0.18.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20240401170217-c3f982113cda // indirect
-	google.golang.org/grpc v1.62.1 // indirect
-	google.golang.org/protobuf v1.33.0 // indirect
+	google.golang.org/grpc v1.33.1
+	google.golang.org/protobuf v1.25.0
 )
 
-replace github.com/junyang7/go-common v1.0.0 => /Users/junyang7/env/go-common
+require (
+	github.com/golang/protobuf v1.4.3 // indirect
+	golang.org/x/net v0.38.0 // indirect
+	golang.org/x/sys v0.31.0 // indirect
+	golang.org/x/text v0.23.0 // indirect
+	google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013 // indirect
+)
